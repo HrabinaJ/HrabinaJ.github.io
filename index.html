@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet"/>
+
+    <!-- Username Input Form -->
+    <div id="login-container">
+        <input type="text" id="username" placeholder="Enter Username">
+        <button id="login-btn" class="btn">Login</button>
+    </div>
+
+    <!-- Calendar -->
+    <div class="calendar-container" style="display: none;">
+        <div class="calendar-toolbar">
+          <button class="prev month-btn">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <div class="current-month"></div>
+          <button class="next month-btn">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+        <div class="calendar">
+          <div class="weekdays">
+            
+            <div class="weekday-name">Mo</div>
+            <div class="weekday-name">Tu</div>
+            <div class="weekday-name">We</div>
+            <div class="weekday-name">Th</div>
+            <div class="weekday-name">Fr</div>
+            <div class="weekday-name">Sa</div>
+            <div class="weekday-name">Su</div>
+          </div>
+          <div class="calendar-days" id="calendar-days"></div>
+        </div>
+        <div class="goto-button">
+          <button type="button" class="btn" id="today">Today</button>
+        </div>
+      </div>
+
+    <!-- JavaScript -->
+
+    <script type="module" src="app.js"></script>
+
+</body>
+</html>
