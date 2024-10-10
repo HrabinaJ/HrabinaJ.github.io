@@ -52,7 +52,8 @@ body {
 }
 
 .calendar-container {
-  width: 900px;
+  aspect-ratio: 1/1;
+  max-height: 95vh;
   margin: 0;
   margin: 0 20px;
   height: fit-content;
@@ -102,9 +103,20 @@ body {
 .calendar-days {
   padding-bottom: 12px;
 }
-
 .weekday-name,
-.padding-day,
+.padding-day{
+  position: relative;
+  flex: 0 0 13%;
+  aspect-ratio: 2/1;
+  border-radius: 15px;
+  color: #19181a;
+  text-align: center;
+  line-height: 40px;
+  font-weight: 500;
+  font-size: 1rem;
+  margin: 2px;
+}
+
 .month-day,
 .current-day {
   position: relative;
@@ -206,4 +218,15 @@ body {
 
 .inot-available {
   background-color: red;
+}
+
+@media only screen and (max-width: 768px) {
+
+.indicator{
+  display: none;
+}
+
+.availability-info{
+  display: none;
+}
 }
