@@ -229,4 +229,9 @@ body {
 .availability-info{
   display: none;
 }
+.weekdays,
+.calendar-days {
+  padding-inline: 0px;
+}
+
 }
